@@ -1,0 +1,130 @@
+<div class="container">
+  <div class="header-text" style="position: absolute;"></div>
+  <div class="header-image">
+      <img src="assets/Header-bg.svg" style="width: 100%; height: auto;" />
+      <img src="assets/Logo.svg" style="position: absolute; top: 30px; left: 743px; z-index: 1; width: 70px; height: 70px;" alt="Overlay Image" />
+     <a class="text-below-logo" routerLink="/navigate/dashboard" style="top: 45px; right: 900px; z-index: 1;"> <h4> &lt;  Create Project</h4></a>
+      
+
+  </div>
+  <!-- <h1 class="mb-3">Create Project</h1> -->
+  <form #form="ngForm" (ngSubmit)="addCustomer()" class="formedit">
+  <div class="row">      
+      <div class="col-6"> 
+      <input type="text" class="form-control border" id="name" placeholder="Enter Project Theme" name="name" [(ngModel)]="addCustomerRequest.project_Name">
+      </div>
+      <div class="col-4">
+        <button type="submit" class="btn btn-primary btn-rounded  edit">Save Project</button>
+      </div> 
+    </div>   
+      <br>
+  
+      <div class="row">   
+        
+        <div class="col-4">
+          <label for="reason" class="form-label">Reason</label>
+          <select id="reason" class="form-control border1" name="reason" [(ngModel)]="addCustomerRequest.reason">
+            <option value="" disabled selected>For Business</option> <!-- Set Select as default -->
+            <option *ngFor="let item of reason"> <!-- Assuming item has an 'id' property -->
+              {{item.name}}
+            </option>
+          </select>
+        </div>
+
+        
+        <div class="col-4">
+          <label for="type" class="form-label">Type</label>
+          <select id="type" class="form-control border1" name="type" [(ngModel)]="addCustomerRequest.type">
+            <option value="" disabled selected>Internal</option> <!-- Set Select as default -->
+            <option *ngFor="let item of type"> <!-- Assuming item has an 'id' property -->
+              {{item.name}}
+            </option>
+          </select>
+        </div>
+
+        <div class="col-4">
+          <label for="division" class="form-label">Division</label>
+          <select id="division" class="form-control border1" name="division" [(ngModel)]="addCustomerRequest.division">
+            <option value="" disabled selected>Filters</option> <!-- Set Select as default -->
+            <option *ngFor="let item of division"> <!-- Assuming item has an 'id' property -->
+              {{item.name}}
+            </option>
+          </select>
+        </div>
+
+
+        
+      </div>
+      <br>  
+  
+      <div class="row">   
+        
+        
+        <div class="col-4">
+          <label for="category" class="form-label">Category</label>
+          <select id="category" class="form-control border1" name="category" [(ngModel)]="addCustomerRequest.category">
+            <option value="" disabled selected>Quality A</option> <!-- Set Select as default -->
+            <option *ngFor="let item of category"> <!-- Assuming item has an 'id' property -->
+              {{item.name}}
+            </option>
+          </select>
+        </div>
+
+
+        <div class="col-4">
+          <label for="priority" class="form-label">Priority</label>
+          <select id="priority" class="form-control border1" name="priority" [(ngModel)]="addCustomerRequest.priority">
+            <option value="" disabled selected>High</option> <!-- Set Select as default -->
+            <option *ngFor="let item of priority"> <!-- Assuming item has an 'id' property -->
+              {{item.name}}
+            </option>
+          </select>
+        </div>
+  
+  
+        <div class="col-4">
+          <label for="department" class="form-label">Department</label>
+          <select id="department" class="form-control border1" name="department" [(ngModel)]="addCustomerRequest.department">
+            <option value="" disabled selected>Strategy</option> <!-- Set Select as default -->
+            <option *ngFor="let item of department"> <!-- Assuming item has an 'id' property -->
+              {{item.name}}
+            </option>
+          </select>
+        </div>
+  
+      </div>
+  
+      <br> 
+      <div class="row">   
+        <div class="col-4">
+        <label for="start" class="form-label">Start Date as Per Project Plan</label>
+        <input type="date" class="form-control border1" id="start" name="start" [(ngModel)]="addCustomerRequest.start_Date">
+        </div>
+  
+  
+  
+        <div class="col-4">
+          <label for="end" class="form-label">End Date as Per Project Plan</label>
+        <input type="date" class="form-control border1" id="end" name="end" [(ngModel)]="addCustomerRequest.end_Date">
+        </div>
+  
+  
+  
+        <div class="col-4">
+          <label for="location" class="form-label">Location</label>
+          <select id="location" class="form-control border1" name="location" [(ngModel)]="addCustomerRequest.location">
+            <option value="" disabled selected>Pune</option> <!-- Set Select as default -->
+            <option *ngFor="let item of location"> <!-- Assuming item has an 'id' property -->
+              {{item.name}}
+            </option>
+          </select>
+        </div>
+        
+      </div>
+  
+  
+     <br>
+  
+      <label for="name" class="form-label edit1">Status:<b>Registered</b></label>
+  </form>
+    </div>

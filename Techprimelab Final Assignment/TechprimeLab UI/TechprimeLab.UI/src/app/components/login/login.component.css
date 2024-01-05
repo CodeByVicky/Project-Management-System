@@ -1,0 +1,87 @@
+.panel-heading{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #forget{
+    min-width: 100px;
+    margin-left: auto;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  .form-inline label{
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .panel{
+    min-height: 380px;
+    border-radius: 12px;
+    margin-top: -176px;
+    background: #FFFF;
+  
+  }
+  .input-field{
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+   align-items: center;
+   cursor: pointer;
+   border: 1px solid #f8f3f3;
+   /* color: #4343ff; */
+    
+  }
+  img, svg {
+    vertical-align: middle;
+    width: 1429px;
+    height: 414px;
+  }
+  
+  
+  .Input-field.error{
+    border : 1px solid red;
+    color: red;
+  }
+  
+  input[type='text'], 
+  input[type='password']{
+    border: none;
+    outline: none;
+    box-shadow: none;
+   
+    width: 100%;
+    
+  }
+  
+  .fa-eye-slash.btη{
+    border: none;
+  
+    outline: none;
+    
+    box-shadow: none;
+  }
+  
+  
+  
+  div.content {
+    margin-left: 80px   ;
+    padding: 1px 0px;
+    background-color: #FFF;
+    height: 900px;
+   
+  }
+
+
+  .text-below-logo {
+    position: absolute;
+    top: 225px; /* Adjust the distance from the top as needed */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: silver;
+    left: 100px; z-index: 1;
+}

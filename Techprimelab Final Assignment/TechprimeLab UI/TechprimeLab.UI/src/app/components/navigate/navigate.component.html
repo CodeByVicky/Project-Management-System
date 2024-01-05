@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+  <br>
+  <br>
+  <br>
+
+    <div class="col">
+
+      <br>
+  <br>
+  <br>
+  <br>
+
+  
+  <br>
+
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+      <div class="nav flex-column">
+        <a class="nav-link" routerLink="dashboard" (click)="changeImage('dashboard')">
+          <img [src]="activeImage['dashboard'] ? 'assets/Dashboard-active.svg' : 'assets/Dashboard.svg'" alt="Dashboard" class="image-link" />
+        </a>
+        <br>
+        <a class="nav-link" routerLink="project-listing" (click)="changeImage('projectList')">
+          <img [src]="activeImage['projectList'] ? 'assets/Project-list-active.svg' : 'assets/Project-list.svg'" alt="Customer List" class="image-link" />
+        </a>
+        <br>
+        <a class="nav-link" routerLink="add-customer" (click)="changeImage('addCustomer')">
+          <img [src]="activeImage['addCustomer'] ? 'assets/create-project-active.svg' : 'assets/create-project.svg'" alt="Add Customer" class="image-link" />
+        </a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+
+        <a class="nav-link" routerLink="login">
+            <img src="assets/Logout.svg" alt="Log Out" class="image-link" />
+          </a>
+      </div>
+    </div>
+
+   
+    <div class="col-11">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+

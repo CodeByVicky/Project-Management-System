@@ -1,0 +1,77 @@
+<!-- dashboard.component.html -->
+
+<div class="container">
+
+
+  <div class="header-text" style="position: absolute;"></div>
+  <div class="header-image">
+      <img src="assets/Header-bg.svg" style="width: 100%; height: auto;" />
+      <img src="assets/Logo.svg" style="position: absolute; top: 30px; left: 743px; z-index: 1; width: 70px; height: 70px;" alt="Overlay Image" />
+     <a class="text-below-logo" style="top: 45px; right: 900px; z-index: 1;"><h3>Dashboard</h3></a>
+      
+  </div>
+  
+    <div class="getValue" *ngIf="projectCounts">
+      <div class="container-fluid px-4">
+        <div class="row g-3 my-2 custom-row">
+          <!-- First Box -->
+          <div class="col">
+            <div class="p-2 bg-white shadow-sm">
+              <div>
+                <p class="fs-7 mb-0">Total Projects</p>
+                <h3 class="fs-1 mb-0">{{ projectCounts?.totalProjects }}</h3>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Second Box -->
+          <div class="col">
+            <div class="p-2 bg-white shadow-sm">
+              <div>
+                <p class="fs-7 mb-0">Closed</p>
+                <h3 class="fs-1 mb-0">{{ projectCounts?.closed }}</h3>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Third Box -->
+          <div class="col">
+            <div class="p-2 bg-white shadow-sm">
+              <div>
+                <p class="fs-7 mb-0">Running</p>
+                <h3 class="fs-1 mb-0">{{ projectCounts?.running }}</h3>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Fourth Box -->
+          <div class="col">
+            <div class="p-2 bg-white shadow-sm">
+              <div>
+                <p class="fs-7 mb-0">Closure Delay</p>
+                <h3 class="fs-1 mb-0">{{closureDelayCount}}</h3>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Fifth Box -->
+          <div class="col">
+            <div class="p-2 bg-white shadow-sm">
+              <div>
+                <p class="fs-7 mb-0">Cancelled</p>
+                <h3 class="fs-1 mb-0">{{ projectCounts?.cancelled }}</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="">
+      <h4 class="Sidec">Department wise - Total Vs Closed</h4>
+      <div class="chart-container col-7">
+        <canvas class="check" id="MyChart"></canvas>
+      </div>
+    </div>
+  </div>
+  

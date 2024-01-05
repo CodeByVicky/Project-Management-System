@@ -1,0 +1,74 @@
+<div class="content">
+    <div class="header-text" style="position: absolute;"></div>
+    <div class="header-image">
+        <img src="assets/login-bg-1.svg" style="width: 100%; height: auto;" />
+        <img src="assets/Logo.svg" style="position: absolute; top: 100px; left: 743px; z-index: 1; width: 100px; height: 100px;" alt="Overlay Image" />
+       
+        <div class="text-below-logo"> <h5 >Online Project Management</h5></div>
+
+    </div>
+  
+    <div class="container header-text">
+        <div class="row" style="height: 70%;">
+            <div class="" style="width: 40%; margin: auto;">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Login to get started</h3>
+                    </div>
+                    <div class="panel-body p-3">
+                        <form>
+                            <div class="form-group pt-3">
+                                <label>Email</label>
+                                <div class="input-field">
+                                    <input type="text"  placeholder="Email" [(ngModel)]="loginObj.email" name="email" >
+                                </div>
+                            </div>
+                            <div class="form-group pt-3">
+                                <label>Password</label>
+                                <div class="input-field">
+                                    <input [type]="type" placeholder="Password"  [(ngModel)]="loginObj.password" name="password">
+                                    <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
+                                </div>
+                                <div class="form-inline justify-content-end mt-2">
+                                    <a id="forget" class="font-weight-bold">Forget Password?</a>
+                                </div>
+                            </div>
+                            <div class="form-inline justify-content-center mt-4">
+                                <button type="submit" (click)="onLogin()" class="btn btn-primary btn-lg btn-rounded">Login</button>
+                               
+                            </div>
+                            <div style=" margin-top: 20px; text-align: center;">
+                                <p class="text-danger" *ngIf="showAlert">{{ alertMessage }}</p>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .header-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-inline {
+        display: flex;
+    }
+
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .justify-content-end {
+        justify-content: flex-end;
+    }
+
+    /* Additional styles for the custom button */
+    .btn-rounded {
+        width: 200px; /* Adjust the width as needed */
+        border-radius: 20px; /* Creates curved ends */
+    }
+</style>

@@ -1,0 +1,146 @@
+/* styles.css */
+label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  select {
+    padding: 5px;
+    font-size: 16px;
+    appearance: none; /* Removes default arrow in some browsers */
+    -webkit-appearance: none; /* For older versions of Safari/Chrome */
+    -moz-appearance: none; /* For older versions of Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="%23000"><path d="M6 9l4-5H2z"/></svg>'); /* SVG downward arrow */
+    background-repeat: no-repeat;
+    background-position: right 5px top 50%; /* Adjust position */
+    background-size: 12px; /* Adjust size */
+  }
+  
+
+  .panel-heading{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #forget{
+    min-width: 100px;
+    margin-left: auto;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  .form-inline label{
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .panel{
+    min-height: 380px;
+    border-radius: 12px;
+    margin-top: -176px;
+    background: #FFFF;
+  
+  }
+  .input-field{
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+   align-items: center;
+   cursor: pointer;
+   border: 1px solid #f8f3f3;
+   /* color: #4343ff; */
+    
+  }
+  img, svg {
+    vertical-align: middle;
+    width: 1429px;
+    height: 414px;
+  }
+  
+  
+  .Input-field.error{
+    border : 1px solid red;
+    color: red;
+  }
+  
+  input[type='text'], 
+  input[type='password']{
+    border: none;
+    outline: none;
+    box-shadow: none;
+   
+    width: 100%;
+    
+  }
+  
+  .fa-eye-slash.btη{
+    border: none;
+  
+    outline: none;
+    
+    box-shadow: none;
+  }
+  
+  
+  
+  div.content {
+    margin-left: 80px   ;
+    padding: 1px 0px;
+    background-color: #FFF;
+    height: 900px;
+   
+  }
+
+
+  .text-below-logo {
+    position: absolute;
+    top: 225px; /* Adjust the distance from the top as needed */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: silver;
+    left: 100px; z-index: 1;
+}
+
+.btn-rounded {
+  width: 200px; /* Adjust the width as needed */
+  border-radius: 20px; /* Creates curved ends */
+}
+
+
+.formedit{
+  margin-top: 50px;
+}
+
+.edit{
+ margin-left: 350px;
+}
+
+
+.edit1{
+  margin-left: 800px;
+ }
+ 
+
+ .border{
+  height: 70px;
+ }
+
+ .border1{
+  height: 50px;
+ }
+
+ 
+ .text-below-logo {
+  position: absolute;
+  top: 250px; /* Adjust the distance from the top as needed */
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  left: 100px; z-index: 1;
+  text-decoration: none;
+}
